@@ -58,7 +58,7 @@ export class User extends Model {
     type: DataType.STRING,
     allowNull: false,
   })
-  password: string = 'password';
+  password!: string;
 
   // Foreign key for Profile
   @ForeignKey(() => Profile)
